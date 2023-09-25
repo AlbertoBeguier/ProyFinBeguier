@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Modificar Informe</title>
+</head>
+
+<body>
+    <form action="{% url 'InformeUpdate' id_informe.id %}" enctype="multipart/form-data" method="post"> {% csrf_token %} 
+
+
+        <p>Tipo {{ form.tipo }} </p>
+        <p> Título {{ form.titulo }} </p>
+        <p> Subtítulo {{ form.subtitulo }} </p>
+        <p> Fecha {{ form.fecha}} </p>
+        <p> Contenido {{ form.contenido}} </p>
+        
+        <button type="submit"> Modificar </button>
+
+    </form>
+    
+</body>
+
+</html>
+

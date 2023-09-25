@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Borrar Informe</title>
+</head>
+
+<body>
+    <form action="{% url 'InformeDelete' id_informe.id %}" enctype="multipart/form-data" method="post"> {% csrf_token %} 
+
+        <h6> ¿Está seguro que desea eliminar este Informe? </h6>
+        <button type="submit"> Confirmar </button>
+        <button><a href="{% url 'InformeList' %}"> Cancelar </a> </button>
+
+    </form>
+    
+</body>
+
+</html>
+

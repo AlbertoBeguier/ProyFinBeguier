@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Listado de Informes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/Articles-Cards-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+    <link rel="stylesheet" href="/assets/css/Features-Cards-icons.css?h=befd8a398792e305b7ffd4a176b5b585">
+    <link rel="stylesheet" href="/assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="/assets/css/Features-Cards-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-body py-3" style="padding-right: 29px;padding-left: 0px;width: 1418.33px;height: 62px;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"></a><img class="pulse animated infinite" src="/static/assets/img/LogoConsulting.png" style="width: 228px;transform: translate(-32px);margin-right: 179px;margin-left: 159px;">
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                </ul><a href="{%url 'logout'%}"><button class="btn btn-primary" style="margin-right:32px;padding-left:0px;margin-left:30px;padding-right:0px;margin-bottom:0px;width:110.5px;background:rgb(205, 147, 13);box-shadow:2px 3px 7px 1px var(--bs-light-text-emphasis);" type="/logout.html">Cerrar Sesión</button></a>
+                    <a href="{%url 'Inicio'%}"><button class="btn btn-primary" style="margin-right: 32px;padding-left: 0px;margin-left: 30px;padding-right: 0px;margin-bottom: 0px;width: 110.5px;background: rgb(13,101,205);box-shadow: 2px 3px 7px 1px var(--bs-light-text-emphasis);" type="/LECTInformes.html">Volver</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container"></div><!-- Start: 1 Row 1 Column -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="font-weight: bold;text-align: left;font-size: 21px;margin: -4px;padding-left: 3px;margin-top: 39px;"><ul>
+        
+        {% for informe in id_informe  %}
+
+             <li> {{informe}} </li>
+             
+            
+        {% endfor %}
+            
+    </ul></div>
+        </div>
+    </div><!-- End: 1 Row 1 Column -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js?h=de3d39894fddf69026710ea6bd84d452"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+</body>
+
+</html>
